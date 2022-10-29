@@ -1,10 +1,7 @@
-
 package mschapv2
 
 import (
-	"bytes"
 	"encoding/binary"
-	"encoding/hex"
 	"fmt"
 )
 
@@ -32,3 +29,4 @@ func (p *ResponsePacket) Encode() (b []byte) {
 	copy(b[29:53], p.NTResponse[:])
 	copy(b[54:], p.Name)
 	return b
+}

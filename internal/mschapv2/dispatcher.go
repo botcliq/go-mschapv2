@@ -1,6 +1,9 @@
 package mschapv2
 
-import "fmt"
+import (
+	"encoding/hex"
+	"fmt"
+)
 
 func Decode(b []byte) (p Packet, err error) {
 	if len(b) == 1 {

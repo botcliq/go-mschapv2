@@ -1,9 +1,7 @@
 package mschapv2
 
 import (
-	"bytes"
 	"encoding/binary"
-	"encoding/hex"
 	"fmt"
 )
 

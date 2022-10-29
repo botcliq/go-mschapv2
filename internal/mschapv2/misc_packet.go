@@ -1,11 +1,12 @@
 package mschapv2
 
 import (
-	"bytes"
-	"encoding/binary"
-	"encoding/hex"
 	"fmt"
 )
+
+type SimplePacket struct {
+	Code OpCode
+}
 
 func (p *SimplePacket) OpCode() OpCode {
 	return p.Code
