@@ -44,7 +44,7 @@ func Decode(b []byte) (p Packet, err error) {
 		resp.Identifier = Identifier
 		return resp, nil
 	default:
-		return nil, fmt.Errorf("[MsChapV2PacketFromEap] can not parse opcode:%s", p.OpCode)
+		return nil, fmt.Errorf("[MsChapV2PacketFromEap] can not parse opcode:%s", p.OpCode())
 	}
 	return p, nil
 }
